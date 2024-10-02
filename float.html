@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ví dụ về Float</title>
+</head>
+<body>
+   
+
+    <div class="wrapper">
+        <div class ="Header">Header</div>
+
+    </div>
+    <div class="column">
+        <div class="box left">Column 1</div>
+        <div class="box right">Column 2</div>
+    </div>
+   
+    <div class ="footer">Footer</div>
+
+    <style>
+        .box {
+            width: 430px;
+            height: 600px;
+            margin: 10px;
+            padding: 10px;
+            background-color: lightblue;
+            border: 1px solid blue;
+        }
+
+        .left {
+            float: left; 
+        }
+
+        .right {
+            float: right; 
+        }
+
+        .column::after {
+            content: "";
+            display: table;
+            clear: both; 
+        }
+        .wrapper{
+            width: 935px;
+            text-align: center;
+            height: 100px;
+            margin: 10px;
+            padding: 10px;
+            margin-right: 10px;
+            background-color: lightblue;
+            border: 1px solid blue;
+        }
+        .footer{
+            width: 935px;
+            height: 100px;
+            margin: 10px;
+            text-align: center;
+            padding: 10px;
+            margin-right: 10px;
+            background-color: lightblue;
+            border: 1px solid blue;
+        }
+    </style>
+</body>
+</html>
